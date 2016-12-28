@@ -41,7 +41,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            <!--<intent-filter>
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -50,14 +51,14 @@
                 <data
                     android:host="myself"
                     android:scheme="myself"/>
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
 
         <!-- 分属app_id -->
         <meta-data
             android:name="app_id"
             android:value="1001"/>
-
 
         <!-- 友盟 -->
         <meta-data
@@ -66,7 +67,6 @@
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="${UMENG_CHANNEL_VALUE}"/>
-
 
         <!-- BUG_HD_SDK -->
         <meta-data
@@ -87,6 +87,8 @@
         <activity android:name=".demo.ViewHoverActivity">
         </activity>
         <activity android:name=".demo.QRCoddeActivity">
+        </activity>
+        <activity android:name=".test.Main2Activity">
         </activity>
     </application>
 
