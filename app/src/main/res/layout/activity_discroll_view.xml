@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <com.myself.fluxdemo.widgets.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_left_title_color="@color/text_main_color_nor"
+        auto:nav_main_title="discroll_view"
+        auto:nav_main_title_color="@color/text_color"
+        auto:nav_right_title="保存"
+        auto:nav_right_title_color="@color/text_main_color_nor"/>
+
+    <com.example.library.discrollview.DiscrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:auto="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.library.discrollview.DiscrollViewContent
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="@android:color/white"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="Do you love cheese?"
+                android:textColor="@android:color/black"
+                android:textSize="72sp"
+                tools:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#007788"
+                auto:discrollve_alpha="true"
+                auto:discrollve_threshold="0.3"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cheese1"
+                auto:discrollve_alpha="true"
+                auto:discrollve_translation="fromLeft|fromBottom"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                auto:discrollve_fromBgColor="#88EE66"
+                auto:discrollve_toBgColor="#000000"/>
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="110dp"
+                android:layout_gravity="right"
+                android:src="@drawable/cheese2"
+                auto:discrollve_translation="fromRight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="When the cheese comes out everybody's happy pecorino red leicester"
+                android:textSize="18sp"
+                auto:discrollve_alpha="true"
+                auto:discrollve_translation="fromBottom"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/ilovecheese_heart"
+                auto:discrollve_scaleX="true"
+                auto:discrollve_scaleY="true"/>
+
+            <com.myself.fluxdemo.test.sample.DiscrollvablePurpleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_purple"
+                android:orientation="vertical"
+                tools:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/purpleView1"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="25dp"
+                    android:alpha="0"
+                    android:src="@drawable/cheese1"
+                    android:translationX="-150dp"/>
+
+                <ImageView
+                    android:id="@+id/purpleView2"
+                    android:layout_width="220dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="15dp"
+                    android:alpha="0"
+                    android:src="@drawable/cheese2"
+                    android:translationX="100dp"/>
+
+            </com.myself.fluxdemo.test.sample.DiscrollvablePurpleLayout>
+
+            <com.myself.fluxdemo.test.sample.DiscrollvablePathLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pathView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="When the cheese comes out everybody's happy pecorino red leicester"
+                    android:textSize="18sp"/>
+
+            </com.myself.fluxdemo.test.sample.DiscrollvablePathLayout>
+
+            <com.myself.fluxdemo.test.sample.DiscrollvableRedLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@android:color/holo_red_dark"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/redView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="When the cheese comes out everybody's happy pecorino red leicester. The big cheese cheese on toast ricotta cheesy grin smelly cheese manchego chalk and cheese macaroni cheese."
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/redView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:alpha="0.0"
+                    android:scaleX="0.1"
+                    android:scaleY="0.1"
+                    android:src="@drawable/cheese3"
+                    android:translationY="50dp"/>
+
+            </com.myself.fluxdemo.test.sample.DiscrollvableRedLayout>
+
+            <com.myself.fluxdemo.test.sample.DiscrollvableGreenLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/greenView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="50dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Finally ..."
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:translationY="-50dp"/>
+
+            </com.myself.fluxdemo.test.sample.DiscrollvableGreenLayout>
+
+            <com.myself.fluxdemo.test.sample.DiscrollvableLastLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/lastView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0"
+                    android:src="@drawable/ilovecheese_i"
+                    android:translationX="-200dp"
+                    android:translationY="-200dp"/>
+
+                <ImageView
+                    android:id="@+id/lastView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/lastView3"
+                    android:alpha="0"
+                    android:src="@drawable/ilovecheese_heart"
+                    android:translationX="200dp"
+                    android:translationY="200dp"/>
+
+                <ImageView
+                    android:id="@+id/lastView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastView1"
+                    android:layout_gravity="center"
+                    android:alpha="0"
+                    android:src="@drawable/ilovecheese_cheese"
+                    android:translationY="200dp"/>
+
+            </com.myself.fluxdemo.test.sample.DiscrollvableLastLayout>
+
+        </com.example.library.discrollview.DiscrollViewContent>
+
+    </com.example.library.discrollview.DiscrollView>
+</LinearLayout>

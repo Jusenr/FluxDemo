@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_background">#FFFFFF</color>
+    <color name="layout_background">#EBEBEB</color>
+    <color name="edit_text_background">#FFF</color>
+    <color name="background_F5F5F5">#F5F5F5</color>
+    <color name="background_FFE875">#FFE875</color>
+    <color name="background_694c99">#694c99</color>
+    <color name="background_ddffffff">#ddffffff</color>
+    <color name="bg_color_F0F0F0">#F0F0F0</color>
+
+    <color name="text_color_646464">#646464</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_color_red">#CD5564</color>
+    <color name="text_color_gray">#959595</color>
+    <color name="text_color_B2B2B2">#B2B2B2</color>
+    <color name="text_color_9B9B9B">#9B9B9B</color>
+    <color name="text_color_C1C1C1">#C1C1C1</color>
+    <color name="text_color_88FFFFFF">#88FFFFFF</color>
+    <color name="text_main_color_sel">#B57DE4</color>
+    <color name="text_main_color_nor">#985EC9</color>
+    <color name="text_color_F5F5F5">#F5F5F5</color>
+    <color name="text_color_ED5564">#ED5564</color>
+    <color name="text_color_69D398">#69D398</color>
+    <color name="text_color_985EC9">#985EC9</color>
+    <color name="text_color_6666CC">#6666CC</color>
+    <color name="text_color_222222">#222222</color>
+
+    <color name="theme">#8B49F6</color>
+    <color name="light_gray_black">#646464</color>
+    <color name="gray_white2">#f7f7f7</color>
+    <color name="gray_black">#333333</color>
+    <color name="color_EBEBEB">#EBEBEB</color>
+    <color name="color_golden">#FFE875</color>
+    <color name="color_border">#cccccc</color>
+    <color name="color_C2C2C2">#C2C2C2</color>
+    <color name="color_313131">#313131</color>
+    <color name="color_7f313131">#7f313131</color>
+    <color name="color_007AFF">#007AFF</color>
+    <color name="color_489CDF">#489CDF</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_rectangle_nor">#F5F5F5</color>
+    <color name="color_rectangle_sel">#985EC9</color>
+    <color name="color_history_nor">#985cc9</color>
+    <color name="color_history_sel">#8044b2</color>
+    <color name="color_F4EFF9">#F4EFF9</color>
+    <color name="color_49484B">#48494B</color>
+    <color name="color_212121">#212121</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_bb000000">#bb000000</color>s
+    <color name="color_FFF6F1">#FFF6F1</color>
+    <color name="color_blue_green">#4BCFAE</color>
+
+    <color name="half_transparent_bg">#80000000</color>
+
+    <color name="service_btn_nor">#985CC9</color>
+    <color name="service_btn_sel">#B57DE4</color>
+    <color name="browse_background">#000000</color>
+
+
+    <!--NavigationBar-->
+    <color name="navigation_bar_background_color_light">#FFFDF8</color>
+    <color name="divider_color">#E1E1E1</color>
+
+    <color name="popup_background">#66000000</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="text_color">#313131</color>
+
+    <color name="background_tab_pressed">#1AFFFFFF</color>
+
+    <color name="setting_item_background_normal">@color/white</color>
+    <color name="setting_item_background_pressed">#F5F5F5</color>
+
+    <color name="recycler_click_sel">#44CCCCCC</color>
+    <color name="recycler_click_nor">@color/white</color>
+
+    <color name="blue">#FF33B5E5</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_fafafa">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+</resources>

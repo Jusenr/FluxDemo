@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--TextSize-->
+    <dimen name="text_size_6sp">6sp</dimen>
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_26sp">26sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_30sp">30sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+
+    <!--xxdp-->
+    <dimen name="btn_delete">80dp</dimen>
+    <dimen name="left_icon_width">80dp</dimen>
+    <dimen name="left_icon_height">80dp</dimen>
+    <dimen name="distance_30dp">30dp</dimen>
+    <dimen name="distance_25dp">25dp</dimen>
+    <dimen name="distance_20dp">20dp</dimen>
+    <dimen name="distance_18dp">18dp</dimen>
+    <dimen name="distance_15dp">15dp</dimen>
+    <dimen name="distance_13dp">13dp</dimen>
+    <dimen name="distance_10dp">10dp</dimen>
+    <dimen name="distance_8dp">8dp</dimen>
+    <dimen name="distance_5dp">5dp</dimen>
+    <dimen name="distance_4dp">4dp</dimen>
+    <dimen name="distance_3dp">3dp</dimen>
+    <dimen name="immersive">0dp</dimen>
+
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="drawable_padding_small">4dp</dimen>
+    <dimen name="margin_usual">20dp</dimen>
+    <dimen name="margin_big">15.36dp</dimen>
+
+    <dimen name="crop__bar_height">40dp</dimen>
+    <dimen name="navigation_bar_height">48dp</dimen>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_icon_size">24dp</dimen>
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+    <dimen name="fab_stroke_width">1dp</dimen>
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+    <dimen name="menu_item_padding">2dp</dimen>
+    <dimen name="text_right_padding">28dp</dimen>
+    <dimen name="text_right_translation">8dp</dimen>
+    <dimen name="text_wrapper_right_margin">-8dp</dimen>
+    <dimen name="menu_text_size">15sp</dimen>
+</resources>

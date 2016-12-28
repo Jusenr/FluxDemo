@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_context_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myself.fluxdemo.demo.contextmeun.ContextMenuActivity">
+
+    <!--标题栏-->
+    <com.myself.fluxdemo.widgets.NavigationBar
+        style="@style/style_navigation_bar"
+        android:visibility="gone"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="context menu"
+        auto:nav_main_title_color="@color/text_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_bar"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+命令行控制台输入命令
+gradlew.bat initFreeline
+gradlew initFreeline -Pmirror
+
+编译运行
+在命令行控制台输入命令
+
+freeline.py -f     整个项目编译运行
+freeline.py        部分编译运行
+
+
+
+若再失败 请查看官方文档https://github.com/alibaba/freeline

@@ -1,0 +1,148 @@
+{
+    "android_gradle_plugin_version": "2.2.0",
+    "apk_path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\build\\outputs\\apk\\app-local_release-debug.apk",
+    "auto_dependency": false,
+    "build_cache_dir": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\build\\freeline",
+    "build_directory": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\build",
+    "build_script": "gradlew.bat :app:assembleLocal_releaseDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "D:\\AndroidSdk\\build-tools\\24.0.1",
+    "build_tools_version": "24.0.1",
+    "compile_sdk_directory": "D:\\AndroidSdk\\platforms\\android-24",
+    "compile_sdk_version": "android-24",
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.myself.fluxdemo",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo",
+    "freeline_gradle_plugin_version": "0.8.3",
+    "java_home": "D:\\developments\\java\\jdk1.8.0_101",
+    "launcher": "com.myself.fluxdemo.MainActivity",
+    "main_assets_directory": [
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\assets",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\assets",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\assets",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\jniLibs",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\jniLibs",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\jniLibs",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\jni-libs"
+    ],
+    "main_jni_directory": [
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\jni",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\jni",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\jni",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\build\\generated\\source\\r\\local_release\\debug\\R.java",
+    "main_res_directory": [
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\res",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\res",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\res",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\java",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\java",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\java",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\java",
+        "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\db-gen"
+    ],
+    "module_dependencies": {
+        "app": [
+            "library"
+        ],
+        "library": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app"
+        },
+        {
+            "name": "library",
+            "path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library"
+        }
+    ],
+    "package": "com.myself.fluxdemo",
+    "product_flavor": "local_release",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\assets",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\assets",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\assets",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\jniLibs",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\jniLibs",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\jniLibs",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\jni-libs"
+            ],
+            "main_jni_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\jni",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\jni",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\jni",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\res",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\res",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\res",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_releaseDebug\\java",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\debug\\java",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\local_release\\java",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\java",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\app\\src\\main\\db-gen"
+            ]
+        },
+        "library": {
+            "main_assets_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\release\\assets",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\release\\jniLibs",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\release\\jni",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\main\\jni"
+            ],
+            "main_manifest_path": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\release\\res",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\release\\java",
+                "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo\\library\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "root_dir": "C:\\Users\\Administrator\\AndroidStudioProjects\\FluxDemo",
+    "sdk_directory": "D:\\AndroidSdk",
+    "use_jdk8": true
+}

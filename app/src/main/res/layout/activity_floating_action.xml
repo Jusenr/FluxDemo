@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_floating_action"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myself.fluxdemo.demo.FloatingActionActivity">
+
+    <!--标题栏-->
+    <com.myself.fluxdemo.widgets.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="FloatLabel et"
+        auto:nav_main_title_color="@color/text_color"/>
+
+
+    <com.example.library.floatingaction.FloatingActionButton
+        android:id="@+id/pink_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        auto:fab_colorNormal="@color/pink"
+        auto:fab_colorPressed="@color/pink_pressed"
+        auto:fab_icon="@drawable/ic_fab_star"/>
+
+    <com.example.library.floatingaction.AddFloatingActionButton
+        android:id="@+id/semi_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pink_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        auto:fab_colorNormal="@color/blue_semi_transparent"
+        auto:fab_colorPressed="@color/blue_semi_transparent_pressed"
+        auto:fab_plusIconColor="@color/white"/>
+
+    <com.example.library.floatingaction.FloatingActionButton
+        android:id="@+id/setter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/semi_transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <com.example.library.floatingaction.AddFloatingActionButton
+        android:id="@+id/normal_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        auto:fab_colorNormal="@color/white"
+        auto:fab_colorPressed="@color/white_pressed"
+        auto:fab_plusIconColor="@color/half_black"/>
+
+    <com.example.library.floatingaction.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/normal_plus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        auto:fab_addButtonColorNormal="@color/white"
+        auto:fab_addButtonColorPressed="@color/white_pressed"
+        auto:fab_addButtonPlusIconColor="@color/half_black"
+        auto:fab_addButtonSize="mini"
+        auto:fab_labelStyle="@style/menu_labels_style"
+        auto:fab_labelsPosition="right">
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_title="Label on the right"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_size="mini"
+            auto:fab_title="Another one on the right"/>
+
+    </com.example.library.floatingaction.FloatingActionsMenu>
+
+    <com.example.library.floatingaction.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        auto:fab_addButtonColorNormal="@color/white"
+        auto:fab_addButtonColorPressed="@color/white_pressed"
+        auto:fab_addButtonPlusIconColor="@color/half_black"
+        auto:fab_labelStyle="@style/menu_labels_style">
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_title="Action A"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_title="Action with a very long name"/>
+
+    </com.example.library.floatingaction.FloatingActionsMenu>
+
+    <com.example.library.floatingaction.FloatingActionsMenu
+        android:id="@+id/multiple_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/navigation_bar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        auto:fab_addButtonColorNormal="@color/white"
+        auto:fab_addButtonColorPressed="@color/white_pressed"
+        auto:fab_addButtonPlusIconColor="@color/half_black"
+        auto:fab_addButtonSize="mini"
+        auto:fab_expandDirection="down"
+        auto:fab_labelStyle="@style/menu_labels_style">
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_size="mini"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:id="@+id/button_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_title="Click to remove"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:id="@+id/button_gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:id="@+id/action_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_title="Set bottom menu enabled/disabled"/>
+
+    </com.example.library.floatingaction.FloatingActionsMenu>
+
+    <com.example.library.floatingaction.FloatingActionsMenu
+        android:id="@+id/multiple_actions_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_bar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/multiple_actions_down"
+        android:layout_toStartOf="@+id/multiple_actions_down"
+        auto:fab_addButtonColorNormal="@color/white"
+        auto:fab_addButtonColorPressed="@color/white_pressed"
+        auto:fab_addButtonPlusIconColor="@color/half_black"
+        auto:fab_addButtonSize="mini"
+        auto:fab_addButtonStrokeVisible="false"
+        auto:fab_expandDirection="left">
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_size="mini"/>
+
+        <com.example.library.floatingaction.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            auto:fab_colorNormal="@color/white"
+            auto:fab_colorPressed="@color/white_pressed"
+            auto:fab_size="mini"/>
+
+    </com.example.library.floatingaction.FloatingActionsMenu>
+
+    <com.example.library.floatingaction.FloatingActionButton
+        android:id="@+id/setter_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/setter"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        style="@style/menu_labels_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/setter_drawable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="test"/>
+
+</RelativeLayout>

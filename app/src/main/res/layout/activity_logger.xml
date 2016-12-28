@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_logger"
+    android:layout_width="match_parent"
+    style="@style/AlertDialog.AppCompat"
+    android:layout_height="match_parent"
+    tools:context="com.myself.fluxdemo.demo.LoggerActivity">
+
+    <!--标题栏-->
+    <com.myself.fluxdemo.widgets.NavigationBar
+        style="@style/style_navigation_bar"
+        android:layout_alignParentTop="true"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="Crash Logger"
+        auto:nav_main_title_color="@color/text_color"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_bar"
+        android:background="@drawable/bg_round_rect_white"
+        android:padding="@dimen/distance_8dp">
+
+        <TextView
+            android:id="@+id/tv_crash_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_8dp"/>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:auto="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_qrcodde"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_EBEBEB"
+                tools:context="com.myself.fluxdemo.demo.QRCoddeActivity">>
+
+    <!--标题栏-->
+    <com.myself.fluxdemo.widgets.NavigationBar
+        style="@style/style_navigation_bar"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="我的手环"
+        auto:nav_main_title_color="@color/text_color"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation_bar">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5dp"
+                android:background="@drawable/bg_round_rect_white"
+                android:padding="@dimen/distance_8dp">
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="设备二维码"
+                    android:textColor="@color/color_212121"
+                    android:textSize="@dimen/text_size_16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_text0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_text"
+                    android:layout_marginTop="@dimen/distance_8dp"
+                    android:text="请妥善保管设备二维码，建议保存到手机中便于绑定手环"
+                    android:textColor="@color/color_212121"
+                    android:textSize="@dimen/text_size_16sp"/>
+
+                <FrameLayout
+                    android:id="@+id/fl_qr_code"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/tv_text0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/distance_5dp"
+                    android:background="@color/bg_color_F0F0F0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="获取失败"
+                        android:textSize="@dimen/text_size_18sp"/>
+
+                    <!--二维码图片-->
+                    <ImageView
+                        android:id="@+id/iv_qr_code"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"/>
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/fl_qr_code"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/distance_10dp"
+                    android:background="@drawable/btn_get_focus_sel"
+                    android:text="保存到手机"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_5dp"
+                android:layout_marginRight="@dimen/distance_5dp"
+                android:layout_marginTop="@dimen/distance_3dp"
+                android:background="@drawable/bg_round_rect_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_current_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/distance_10dp"
+                    android:singleLine="true"
+                    android:text="当前版本  PBI_PUTAOV2.1.24_31"
+                    android:textColor="@color/color_212121"
+                    android:textSize="@dimen/text_size_16sp"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/tv_current_version"
+                    android:background="@color/divider_color"/>
+
+                <TextView
+                    android:id="@+id/tv_latest_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/view"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/distance_10dp"
+                    android:singleLine="true"
+                    android:text="最新版本  PBI_PUTAOV2.1.24_31"
+                    android:textColor="@color/color_212121"
+                    android:textSize="@dimen/text_size_16sp"/>
+
+                <Button
+                    android:id="@+id/btn_upgrade"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/distance_10dp"
+                    android:background="@drawable/btn_get_focus_sel"
+                    android:paddingLeft="@dimen/distance_40dp"
+                    android:paddingRight="@dimen/distance_40dp"
+                    android:text="立即升级"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_5dp"
+                android:layout_marginRight="@dimen/distance_5dp"
+                android:layout_marginTop="@dimen/distance_10dp"
+                android:background="@drawable/bg_round_rect_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/distance_10dp"
+                    android:singleLine="true"
+                    android:text="PaiBand使用说明"
+                    android:textColor="@color/color_212121"
+                    android:textSize="@dimen/text_size_16sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

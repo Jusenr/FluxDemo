@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_container" type="id"/>
+    <!--NavigationBar-->
+    <item name="nav_background" type="id"/>
+    <item name="navigation_bar" type="id"/>
+    <!--BasicPopupWindow-->
+    <item name="popup_layout" type="id"/>
+    <!--BasicDialog-->
+    <item name="dialog_layout" type="id"/>
+    <!--LoadingLayout-->
+    <item name="btn_empty_retry" type="id"/>
+    <item name="btn_error_retry" type="id"/>
+    <item name="load_state_view" type="id"/>
+    <!--FloatingActionsMenu-->
+    <item name="fab_expand_menu_button" type="id"/>
+    <item name="fab_label" type="id"/>
+</resources>

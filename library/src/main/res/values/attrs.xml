@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!--NavigationBar-->
+    <declare-styleable name="NavigationBar">
+        <attr name="nav_left_icon" format="reference"/>
+        <attr name="nav_right_icon" format="reference"/>
+        <attr name="nav_main_title" format="string"/>
+        <attr name="nav_main_title_color" format="color"/>
+        <attr name="nav_dis_main_title_color" format="color"/>
+        <attr name="nav_main_title_size" format="dimension|reference"/>
+        <attr name="nav_left_title" format="string"/>
+        <attr name="nav_left_title_color" format="color"/>
+        <attr name="nav_dis_left_title_color" format="color"/>
+        <attr name="nav_left_title_size" format="dimension|reference"/>
+        <attr name="nav_right_title" format="string"/>
+        <attr name="nav_right_title_color" format="color"/>
+        <attr name="nav_dis_right_title_color" format="color"/>
+        <attr name="nav_right_title_size" format="dimension|reference"/>
+        <attr name="nav_divider_color" format="color"/>
+        <attr name="nav_has_divider" format="boolean"/>
+        <attr name="nav_has_right_title_icon" format="boolean"/>
+        <attr name="nav_right_title_indicator_background" format="reference"/>
+        <attr name="nav_right_title_icon_text_color" format="color"/>
+    </declare-styleable>
+
+    <!--DiscrollView-->
+    <declare-styleable name="DiscrollView_LayoutParams">
+        <attr name="discrollve_alpha" format="boolean"/>
+        <attr name="discrollve_scaleX" format="boolean"/>
+        <attr name="discrollve_scaleY" format="boolean"/>
+        <attr name="discrollve_threshold" format="float"/>
+        <attr name="discrollve_fromBgColor" format="color"/>
+        <attr name="discrollve_toBgColor" format="color"/>
+        <attr name="discrollve_translation"/>
+    </declare-styleable>
+    <attr name="discrollve_translation">
+        <flag name="fromTop" value="0x01"/>
+        <flag name="fromBottom" value="0x02"/>
+        <flag name="fromLeft" value="0x04"/>
+        <flag name="fromRight" value="0x08"/>
+    </attr>
+
+    <!--FloatLabeledEditText-->
+    <declare-styleable name="FloatLabeledEditText">
+        <attr name="fletTextAppearance" format="reference"/>
+        <attr name="fletPadding" format="reference|dimension"/>
+        <attr name="fletPaddingLeft" format="reference|dimension"/>
+        <attr name="fletPaddingTop" format="reference|dimension"/>
+        <attr name="fletPaddingRight" format="reference|dimension"/>
+        <attr name="fletPaddingBottom" format="reference|dimension"/>
+        <attr name="fletBackground" format="reference|color"/>
+    </declare-styleable>
+
+    <!--FloatingActionButton-->
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <!--RoundedImageView-->
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension"/>
+        <attr name="riv_corner_radius_top_left" format="dimension"/>
+        <attr name="riv_corner_radius_top_right" format="dimension"/>
+        <attr name="riv_corner_radius_bottom_left" format="dimension"/>
+        <attr name="riv_corner_radius_bottom_right" format="dimension"/>
+        <attr name="riv_border_width" format="dimension"/>
+        <attr name="riv_border_color" format="color"/>
+        <attr name="riv_mutate_background" format="boolean"/>
+        <attr name="riv_oval" format="boolean"/>
+        <attr name="android:scaleType"/>
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0"/>
+            <enum name="repeat" value="1"/>
+            <enum name="mirror" value="2"/>
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0"/>
+            <enum name="repeat" value="1"/>
+            <enum name="mirror" value="2"/>
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0"/>
+            <enum name="repeat" value="1"/>
+            <enum name="mirror" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!--ImageDraweeView-->
+    <declare-styleable name="ImageDraweeView">
+        <attr name="aspect_ratio" format="float"/>
+        <attr name="default_drawable" format="reference"/>
+    </declare-styleable>
+
+</resources>
