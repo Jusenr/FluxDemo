@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.myself.fluxdemo.test.Main2Activity">
 
+    <!--标题栏-->
+    <com.myself.fluxdemo.widgets.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_left_title_color="@color/text_main_color_nor"
+        auto:nav_main_title="提交代码测试"
+        auto:nav_main_title_color="@color/text_color"
+        auto:nav_right_title="保存"
+        auto:nav_right_title_color="@color/text_main_color_nor"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_bar"
+       android:layout_centerHorizontal="true"
+        android:text="hello"/>
 </RelativeLayout>

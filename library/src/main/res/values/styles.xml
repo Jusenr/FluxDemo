@@ -21,6 +21,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/navigation_bar_height</item>
         <item name="nav_has_divider">false</item>
+        <item name="android:layout_alignParentTop">true</item>
         <item name="android:background">@color/white</item>
     </style>
 
